@@ -1,0 +1,22 @@
+ - name: creating my own directory
+   file:
+    path: /home/ubuntu/reddy
+    owner: ubuntu
+    group: ubuntu
+    state: directory
+
+ - name: creating my own file
+   file: 
+    path: /home/ubuntu/reddy/reddyk
+    owner: ubuntu
+    group: ubuntu
+    state: touch
+    mode: 0644
+
+ - user:
+     name: Reddy
+     shell: /bin/bash
+     
+ - group:
+     name: Reddy
+     state: present 

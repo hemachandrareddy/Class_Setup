@@ -1,0 +1,3 @@
+ - name: git
+   become: yes
+   apt: name=git state=latest update_cache=yes
